@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>TECHNOLOGY</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./technology.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./shared/logo.svg" alt="Logo" />
+      </div>
+      <nav class="nav-container">
+        <div><a href="./index.html">00 HOME</a></div>
+        <div><a href="./index2.html">01 DESTINATION</a></div>
+        <div><a href="./index3.html">02 CREW</a></div>
+        <div><a href="./index4.html">03 TECHNOLOGY</a></div>
+      </nav>
+    </header>
+    <div class="top">
+      <div class="destination">
+        <p class="nr">03</p>
+        <p class="destinations1">SPACE LAUNCH 101</p>
+      </div>
+    </div>
+    <div class="content-container">
+      <section id="aicipunem1" class="informatii">
+        <div class="button-container">
+          <button class="butonlateral" data-section="aicipunem1">1</button>
+          <button class="butonlateral" data-section="aicipunem2">2</button>
+          <button class="butonlateral" data-section="aicipunem3">3</button>
+        </div>
+
+        <div class="textul">
+          <h2>THE TERMINOLOGY...</h2>
+          <h1>LAUNCH VEHICLE</h1>
+          <p>
+            A launch vehicle or carrier rocket is a rocket-propelled vehicle
+            used to carry a payload from Earth's surface to space, usually to
+            Earth orbit or beyond. Our V-EX7 carrier rocket is the most powerful
+            in operation. Standing 150 meters tall, it is quite an awe-inspiring
+            sight on the launch pad.
+          </p>
+        </div>
+        <div class="clasapentrupoze">
+          <img
+            src="./technology/image-launch-vehicle-portrait.jpg"
+            alt="Launch Vehicle"
+          />
+        </div>
+      </section>
+
+      <section id="aicipunem2" class="informatii">
+        <div class="button-container">
+          <button class="butonlateral" data-section="aicipunem1">1</button>
+          <button class="butonlateral" data-section="aicipunem2">2</button>
+          <button class="butonlateral" data-section="aicipunem3">3</button>
+        </div>
+
+        <div class="textul">
+          <h2>THE TERMINOLOGY...</h2>
+          <h1>SPACEPORT</h1>
+          <p>
+            A spaceport or cosmodrome is a site for launching (or receiving)
+            spacecraft, by analogy to the seaport for ships or airport for
+            aircraft. Based in the famous Cape Canaveral, our spaceport is
+            ideally situated to take advantage of the Earth's rotation for
+            launch.
+          </p>
+        </div>
+        <div class="clasapentrupoze">
+          <img
+            src="./technology/image-spaceport-portrait.jpg"
+            alt="Spaceport"
+          />
+        </div>
+      </section>
+
+      <section id="aicipunem3" class="informatii">
+        <div class="button-container">
+          <button class="butonlateral" data-section="aicipunem1">1</button>
+          <button class="butonlateral" data-section="aicipunem2">2</button>
+          <button class="butonlateral" data-section="aicipunem3">3</button>
+        </div>
+
+        <div class="textul">
+          <h2>THE TERMINOLOGY...</h2>
+          <h1>SPACE CAPSULE</h1>
+          <p>
+            A space capsule is an often-crewed spacecraft that uses a blunt-body
+            reentry capsule to reenter the Earth's atmosphere without wings. Our
+            capsule is where you'll spend your time during the flight. It
+            includes a space gym, cinema, and plenty of other activities to keep
+            you entertained.
+          </p>
+        </div>
+        <div class="clasapentrupoze">
+          <img
+            src="./technology/image-space-capsule-portrait.jpg"
+            alt="Space Capsule"
+          />
+        </div>
+      </section>
+    </div>
+
+    <script>
+      function hideAllSections() {
+        document.querySelectorAll("section").forEach((section) => {
+          console.log(section);
+          section.style.display = "none";
+        });
+      }
+
+      function showSection(sectionId) {
+        console.log(sectionId);
+        hideAllSections();
+        document.getElementById(sectionId).style.display = "flex";
+      }
+
+      document.querySelectorAll(".butonlateral").forEach((button) => {
+        button.addEventListener("click", function () {
+          const sectionToShow = this.getAttribute("data-section");
+          showSection(sectionToShow);
+        });
+      });
+
+      hideAllSections();
+      showSection("aicipunem1");
+    </script>
+  </body>
+</html>

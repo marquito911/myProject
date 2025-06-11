@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>DESTINATION</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./destionation.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./shared/logo.svg" alt="Logo" />
+      </div>
+      <nav class="nav-container">
+        <div><a href="./index.html">00 HOME</a></div>
+        <div><a href="./index2.html">01 DESTINATION</a></div>
+        <div><a href="./index3.html">02 CREW</a></div>
+        <div><a href="./index4.html">03 TECHNOLOGY</a></div>
+      </nav>
+    </header>
+
+    <main class="MainContainer">
+      <div class="top">
+        <div class="destination">
+          <p class="nr">01</p>
+          <p class="destinations1">PICK YOUR DESTIONATION</p>
+        </div>
+      </div>
+      <div class="SecondaryContent">
+        <div class="left">
+            <img id="imagine-planeta" src="./destination/image-moon.png" alt="Imagine Planeta">
+        </div>
+        <div class="right">
+            <div class="menu">
+                <a id="moon" class="active" onclick="changeDestination('moon')">Moon</a>
+                <a id="mars" onclick="changeDestination('mars')">Mars</a>
+                <a id="europa" onclick="changeDestination('europa')">Europa</a>
+                <a id="titan" onclick="changeDestination('titan')">Titan</a>
+            </div>
+
+            <h1 id="titlu-planeta">MOON</h1>
+
+            <p id="descriere-planeta">
+                See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.
+            </p>
+
+            <div class="stats">
+                <div>
+                  <div class="stats-title">AVG. distanta</div>
+                    <span id="distanta" style="font-size: large;">384,400 KM</span>
+                   
+                </div>
+                <div>
+                  <div class="stats-title2">EST. TRAVEL TIME</div>
+                    <span id="timp-deplasare" style="font-size: large;">3 DAYS</span>
+                   
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+      function changeDestination(destination) {
+          const titluplaneta = document.getElementById('titlu-planeta');
+          const descriereplaneta = document.getElementById('descriere-planeta');
+          const imagineplaneta = document.getElementById('imagine-planeta');
+          const distanta = document.getElementById('distanta');
+          const timpdeplasare = document.getElementById('timp-deplasare');
+
+        
+          document.querySelectorAll('.menu a').forEach(link => {
+              link.classList.remove('active');
+          });
+          document.getElementById(destination).classList.add('active');
+
+      
+          if (destination === 'moon') {
+              titluplaneta.textContent = 'MOON';
+              descriereplaneta.textContent = 'See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.';
+              imagineplaneta.src = './destination/image-moon.png';
+              distanta.textContent = '384,400 KM';
+              timpdeplasare.textContent = '3 DAYS';
+          } else if (destination === 'mars') {
+              titluplaneta.textContent = 'MARS';
+              descriereplaneta.textContent = 'See the red planet. An adventurous journey awaits you as you witness the barren beauty of Mars, once the home of ancient rivers and valleys.';
+              imagineplaneta.src = './destination/image-mars.png';
+              distanta.textContent = '225 MIL KM';
+              timpdeplasare.textContent = '9 MONTHS';
+          } else if (destination === 'europa') {
+              titluplaneta.textContent = 'EUROPA';
+              descriereplaneta.textContent = 'Dive into the frozen waters of Europa, one of Jupiter’s moons. A place where ocean exploration and icy landscapes combine to form an otherworldly experience.';
+              imagineplaneta.src = './destination/image-europa.png';
+              distanta.textContent = '628 MIL KM';
+              timpdeplasare.textContent = '6 YEARS';
+          } else if (destination === 'titan') {
+              titluplaneta.textContent = 'TITAN';
+              descriereplaneta.textContent = 'Visit the largest moon of Saturn. Titan offers the chance to experience seas of liquid methane, and a thick atmosphere, ideal for breathtaking views.';
+              imagineplaneta.src = './destination/image-titan.png';
+              distanta.textContent = '1.2 BIL KM';
+              timpdeplasare.textContent = '7 YEARS';
+          }
+      }
+  </script>
+
+  </body>
+</html>

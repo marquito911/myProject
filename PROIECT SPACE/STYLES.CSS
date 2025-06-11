@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap");
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("./home/background-home-desktop.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  font-family: sans;
+}
+
+header {
+  padding-top: 20px;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  position: relative;
+  padding-left: 64px;
+}
+
+.logo::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  /* background-color: grey; */
+  background-color: rgba(128, 128, 128, 0.25);
+  left: 10rem;
+  right: -45px;
+  z-index: 1;
+}
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  padding-right: 64px;
+  padding-left: 64px;
+  gap: 48px;
+  width: 50%;
+  height: 60%;
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(80px);
+  justify-content: space-around;
+  position: relative;
+  overflow: hidden;
+  transform: translateX(-85);
+}
+
+.nav-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.016),
+    rgba(255, 255, 255, 0.05) 5%,
+    rgba(255, 255, 255, 0) 40%
+  );
+  pointer-events: none;
+}
+
+.nav-container div {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  height: 100%;
+}
+
+.nav-container a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-container div:hover {
+  border-bottom: 2px solid white;
+  height: 100%;
+}
+.content {
+  display: flex;
+  height: 80%;
+}
+.left {
+  color: white;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+}
+.left div {
+  width: 50%;
+  margin-left: 20%;
+}
+.left div h3 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 28;
+  font-style: normal;
+  letter-spacing: 4px;
+  color: #d0d6f9;
+}
+.left div h1 {
+  font-family: "Bellefair", serif;
+  font-weight: 144;
+  font-style: normal;
+  font-size: 110px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.left div p {
+  font-family: "Barlow", sans-serif;
+  font-weight: 18;
+  font-style: normal;
+  color: #d0d6f9;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.right .explorebuton {
+  background-color: #ffffff;
+  font-family: "Bellefair", serif;
+  color: #000000;
+  border: none;
+  border-radius: 50%;
+  font-size: 32px;
+  cursor: pointer;
+  text-align: center;
+  width: 272px;
+  height: 272px;
+  line-height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 150%;
+  margin-top: 40%;
+  position: relative;
+}
+
+.right .explorebuton:hover {
+  background-color: #f7f7f7;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.right .explorebuton::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+}
+
+.right .explorebuton::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+}
+
+.right .explorebuton:active::before {
+  animation: lines 0.5s;
+}
+
+.right .explorebuton:active::after {
+  animation: lines 0.5s;
+  animation-delay: 0.2s;
+}
+
+@keyframes lines {
+  0% {
+    width: 50;
+    height: 50;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    width: 350px;
+    height: 350px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    width: 450px;
+    height: 450px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+}
+
+.right .explorebuton:active::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.right .explorebuton:active::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
