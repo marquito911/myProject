@@ -1,0 +1,174 @@
+.profileContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 1000px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.cardImage {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+
+.profileImage {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 6px solid #fff;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cardInfo {
+  padding: 40px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cardInfo h1 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.2;
+}
+
+.cardInfo p {
+  font-size: 1.1rem;
+  margin: 12px 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+.cardInfo p strong {
+  color: #333;
+}
+
+.cardInfo .bio {
+  font-size: 1rem;
+  color: #777;
+}
+
+.contactButton {
+  align-self: flex-start;
+  margin-top: 25px;
+  padding: 12px 25px;
+  background-color: #007BFF;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.contactButton:hover {
+  background-color: #0056b3;
+  box-shadow: 0 8px 15px rgba(0, 123, 255, 0.4);
+}
+
+.contactButton:focus {
+  outline: none;
+}
+
+.errorContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.errorCard {
+  text-align: center;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: #fefefe;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.errorImage {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1rem;
+}
+
+.errorTitle {
+  font-size: 24px;
+  color: #d32f2f;
+  margin-bottom: 0.5rem;
+}
+
+.errorMessage {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .profileContainer {
+    padding-bottom: 30px;
+    min-height: 62.5vh;
+    max-height: 90vh;
+  }
+  .card {
+    flex-direction: column;
+    width: 95%;
+  }
+  .cardImage {
+    width: 100%;
+    border-right: none;
+    border-bottom: 2px solid #ddd;
+    padding: 15px 0;
+  }
+  .profileImage {
+    width: 120px;
+    height: 120px;
+    border-width: 4px;
+  }
+  .cardInfo {
+    width: 100%;
+    padding: 25px 20px;
+  }
+  .cardInfo h1 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  .cardInfo p {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+  .contactButton {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 1.1rem;
+    border-radius: 25px;
+  }
+}/*# sourceMappingURL=UserDetailsPage.module.css.map */

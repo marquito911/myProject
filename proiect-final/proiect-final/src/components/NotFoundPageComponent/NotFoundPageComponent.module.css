@@ -1,0 +1,37 @@
+.container {
+  text-align: center;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  background-color: #f8f9fa;
+}
+
+.title {
+  font-size: 8rem;
+  font-weight: bold;
+  color: #dc3545;
+  margin-bottom: 1rem;
+}
+
+.message {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #6c757d;
+}
+
+.button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.button:hover {
+  background-color: #0056b3;
+}/*# sourceMappingURL=NotFoundPageComponent.module.css.map */

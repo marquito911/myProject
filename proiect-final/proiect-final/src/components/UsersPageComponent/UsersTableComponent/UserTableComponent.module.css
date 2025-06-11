@@ -1,0 +1,41 @@
+.modalButtonGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+@media (max-width: 600px) {
+  .modalButtonGroup {
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 12px;
+  }
+  .modalButtonGroup > * {
+    width: 100%;
+  }
+  .MuiTableCell-root {
+    padding: 6px 8px !important;
+    font-size: 0.75rem !important;
+    padding-bottom: 99%;
+  }
+  .MuiTable-root {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 99%;
+  }
+  .MuiTableRow-root {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+  .MuiTableHead-root {
+    display: table-header-group;
+  }
+  .MuiTableBody-root {
+    display: block;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+}/*# sourceMappingURL=UserTableComponent.module.css.map */

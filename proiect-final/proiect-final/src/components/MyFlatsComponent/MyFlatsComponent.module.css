@@ -1,0 +1,217 @@
+.homePageContainer {
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #f4f6f9, #ffffff);
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  width: 270px;
+  border-radius: 12px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.cardImage {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cardImage img {
+  width: 100%;
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card:hover .cardImage img {
+  transform: scale(1.05);
+}
+
+.cardDetails {
+  margin-top: 12px;
+  font-family: "Roboto", sans-serif;
+}
+
+.cardDetails h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.cardDetails p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.4;
+  margin: 5px 0;
+}
+
+.cardFooter {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardFooter button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-size: 0.6rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cardFooter button:hover {
+  background-color: #0056b3;
+}
+
+.modalImageWrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.modalImage {
+  width: 100%;
+  height: auto;
+  transition: transform 0.4s ease;
+}
+
+.modalImageWrapper:hover .modalImage {
+  transform: scale(1.05);
+}
+
+.filterContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filterGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.filterItem {
+  display: flex;
+  flex-direction: column;
+  width: 12%;
+}
+
+.filterLabel {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 18px;
+  color: #333;
+}
+
+.MuiSelect-root, .MuiSlider-root {
+  background-color: #f7f7f7;
+  border-radius: 5px;
+}
+
+.MuiSlider-root {
+  margin-top: 10px;
+}
+
+.MuiSlider-thumb {
+  background-color: #007bff;
+}
+
+.MuiSlider-rail {
+  background-color: #dfe3e8;
+}
+
+.clearFiltersButton {
+  background-color: #ff5c5c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+  max-width: 10%;
+  padding: 12px 20px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.clearFiltersButton:hover {
+  background-color: #e02d2d;
+}
+
+.rentLabel {
+  width: 100%;
+  padding: 18px;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.rentInput {
+  width: 100%;
+  padding: 18px;
+  margin-bottom: 10px;
+  border-radius: 1px;
+  font-size: 15px;
+}
+
+.imagePreviewWrapper {
+  margin-top: 1rem;
+  border-radius: 10px;
+  overflow: hidden;
+  max-height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+}
+
+.imagePreviewWrapper img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+}
+
+.imagePreviewWrapper img:hover {
+  transform: scale(1.05);
+}
+
+.errorText {
+  color: red;
+}/*# sourceMappingURL=MyFlatsComponent.module.css.map */

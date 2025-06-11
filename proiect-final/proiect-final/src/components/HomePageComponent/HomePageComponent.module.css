@@ -1,0 +1,306 @@
+.homePageContainer {
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #f4f6f9, #ffffff);
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  width: 250px;
+  border-radius: 12px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.cardImage {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cardImage img {
+  width: 100%;
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card:hover .cardImage img {
+  transform: scale(1.05);
+}
+
+.cardDetails {
+  margin-top: 12px;
+  font-family: "Roboto", sans-serif;
+}
+
+.cardDetails h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.cardDetails p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.4;
+  margin: 5px 0;
+}
+
+.cardFooter {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardFooter button {
+  background-color: #007bff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cardFooter button:hover {
+  background-color: #0056b3;
+}
+
+.MuiIconButton-root {
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.MuiIconButton-root:hover {
+  background-color: #f7f7f7;
+  transform: scale(1.1);
+}
+
+.MuiIconButton-root .MuiSvgIcon-root {
+  color: #ff5c5c;
+  transition: color 0.3s ease;
+}
+
+.MuiIconButton-root:hover .MuiSvgIcon-root {
+  color: #e02d2d;
+}
+
+.modalImageWrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.modalImage {
+  width: 100%;
+  height: auto;
+  transition: transform 0.4s ease;
+}
+
+.modalImageWrapper:hover .modalImage {
+  transform: scale(1.05);
+}
+
+.dialogTitle {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #444;
+}
+
+.dialogContent {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.MuiDialog-paper {
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.clearFiltersButton {
+  background-color: #ff5c5c;
+  color: white;
+  border-radius: 6px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.clearFiltersButton:hover {
+  background-color: #e02d2d;
+}
+
+.filterContainer {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filterGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.filterItem {
+  display: flex;
+  flex-direction: column;
+  min-width: 180px;
+  flex: 1 1 180px;
+}
+
+.filterLabel {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 18px;
+  color: #333;
+}
+
+.MuiSelect-root {
+  background-color: #f7f7f7;
+  border-radius: 5px;
+}
+
+.MuiSlider-root {
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.MuiSlider-thumb {
+  background-color: #007bff;
+}
+
+.MuiSlider-rail {
+  background-color: #dfe3e8;
+}
+
+.clearFiltersButton {
+  background-color: #ff5c5c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+  max-width: 10%;
+}
+
+.clearFiltersButton:hover {
+  background-color: #e02d2d;
+}
+
+.clickText {
+  color: blue;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.clickText:hover {
+  color: darkblue;
+}
+
+@media (max-width: 768px) {
+  .homePageContainer {
+    padding: 20px 10px;
+    padding-bottom: 100px;
+  }
+  .title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  .cardContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  .card {
+    width: 90%;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .cardImage img {
+    height: 160px;
+  }
+  .cardDetails h3 {
+    font-size: 1rem;
+  }
+  .cardDetails p {
+    font-size: 0.85rem;
+  }
+  .cardFooter {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .cardFooter button {
+    width: 100%;
+    padding: 6px;
+    font-size: 0.9rem;
+  }
+  .MuiIconButton-root {
+    align-self: flex-end;
+  }
+  .filterContainer {
+    padding: 15px 10px;
+    box-shadow: none;
+    border-radius: 8px;
+  }
+  .filterGroup {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .filterItem {
+    flex: 1 1 auto;
+    min-width: unset;
+    width: 100%;
+  }
+  .filterLabel {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+  }
+  .MuiSelect-root,
+  .MuiSlider-root {
+    font-size: 0.9rem;
+  }
+  .clearFiltersButton {
+    width: 100%;
+    padding: 8px;
+    font-size: 0.95rem;
+    max-width: unset;
+    margin-top: 10px;
+  }
+  .clickText {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}/*# sourceMappingURL=HomePageComponent.module.css.map */

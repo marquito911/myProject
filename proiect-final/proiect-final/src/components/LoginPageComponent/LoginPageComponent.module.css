@@ -1,0 +1,74 @@
+.logincontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ece9e6, #ffffff);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+}
+
+.loginform {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 420px;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.loginform:hover {
+  transform: translateY(-3px);
+}
+
+.formfield {
+  margin-bottom: 20px;
+}
+
+.formfield input {
+  background-color: #f7f7f7;
+  border-radius: 6px;
+}
+
+.loginbutton {
+  background: linear-gradient(90deg, #abebad, #66bb6a);
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.loginbutton:hover {
+  background: linear-gradient(90deg, #43a047, #4caf50);
+  transform: scale(1.02);
+}
+
+.loginbutton:focus {
+  outline: none;
+}
+
+.formactions {
+  text-align: center;
+}
+
+.formactions p {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.formactions a {
+  color: #4caf50;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.formactions a:hover {
+  color: #388e3c;
+}/*# sourceMappingURL=LoginPageComponent.module.css.map */
