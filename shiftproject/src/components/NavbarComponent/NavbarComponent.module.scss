@@ -1,0 +1,28 @@
+.navbar-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  height: 5vh;
+  background-color: #878787;
+  padding: 10px 20px; 
+}
+
+.logo {
+  height: 40px;
+  margin-right: 20px;
+  cursor: pointer; 
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  height: 50%;
+  margin: 15px 10px; 
+}
+
+.MuiButton-root {
+  text-transform: none;
+}
