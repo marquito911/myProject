@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Pagina de Inregistrare</title>
+    <meta name="description" content="RENTAL HOUSE" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./register.css" />
+    <script src="./register.js" type="module" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="../index/index.html">
+          <img src="./icons8-rent-94.png" alt="Logo"
+        /></a>
+      </div>
+      <nav class="nav-container">
+        <div>
+          <a href="../login/login.html">Login cont</a>
+        </div>
+        <div>
+          <a href="../index/index.html">Pagina principala</a>
+        </div>
+        <div>
+          <a href="../register/register.html">Inregistrare cont</a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="registercontainer">
+      <div class="registerbox">
+        <h2>inregistrare cont</h2>
+        <form class="registerform">
+          <div class="registersubcatt">
+            <div class="registersubcatt">
+              <label for="userName">Username </label>
+              <input
+                type="text"
+                id="userName"
+                name="userName"
+                required
+                placeholder="Introdu numele contului dumneavoastra."
+              />
+            </div>
+
+            <div class="registersubcatt">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="Introdu email-ul"
+              />
+            </div>
+            <div class="registersubcatt">
+              <label for="lastName">Nume de familie</label>
+              <input
+                type="text"
+                id="lastName"
+                name="last-name"
+                required
+                placeholder="Numele tau de familie"
+              />
+            </div>
+
+            <div class="registersubcatt">
+              <label for="firstName">Prenume</label>
+              <input
+                type="text"
+                id="firstName"
+                name="first-name"
+                required
+                placeholder="Prenumele tau"
+              />
+            </div>
+          </div>
+
+          <div class="registersubcatt">
+            <label for="password">Parola</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              placeholder="Introdu parola"
+            />
+          </div>
+
+          <div class="registersubcatt">
+            <label for="confirmpassword">Confirma parola</label>
+            <input
+              type="password"
+              id="confirmpassword"
+              name="confirmpassword"
+              required
+              placeholder="Confirma parola"
+            />
+          </div>
+
+          <div class="registersubcatt">
+            <label for="age">Data nasterii</label>
+            <input type="date" id="age" name="age" required />
+          </div>
+
+          <button type="submit" id="registerbtn" class="registerbtn">
+            inregistreaza-te
+          </button>
+
+          <p id="error" class="error"></p>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Rental House. Toate drepturile rezervate.</p>
+    </footer>
+  </body>
+</html>

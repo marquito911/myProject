@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Pagina principala</title>
+    <meta name="description" content="RENTAL HOUSE" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./home.css" />
+    <link rel="stylesheet" href="../navbar si collapse/navbar.css" />
+    <script type="module" src="../register/util.js" defer></script>
+    <script
+      type="module"
+      src="../navbar si collapse/collapsemenu.js"
+      defer
+    ></script>
+    <script src="./home.js" type="module" defer></script>
+
+    <!-- <script src="./filtrare.js" type="module" defer></script> -->
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="./home.html"> <img src="./icons8-rent-94.png" alt="Logo" /></a>
+      </div>
+
+      <div>
+        <nav class="nav-container">
+          <a href="./home.html">
+            <button type="submit" id="acasa" class="acasa">Acasa</button></a
+          >
+          <a href="../favorite/favorite.html">
+            <button type="submit" id="favorit" class="favorit">
+              Favorite
+            </button></a
+          >
+
+          <div class="profil-container">
+            <button id="profilBtn" class="editprofil">
+              <i class="fas fa-user-edit"></i> Profil
+            </button>
+            <div id="profilMenu" class="profilmenu">
+              <div id="collapseMenu" class="collapseMenu">
+                <p id="currentUserClass" class="currentUserClass"></p>
+              </div>
+              <a href="../myflats/myflats.html">
+                <button id="editprofil" class="menubtnedit">
+                  Anunturile mele
+                </button>
+              </a>
+              <a href="../editprofil/editprofil.html">
+                <button id="editprofil" class="menubtnedit">
+                  Editare profil
+                </button>
+              </a>
+              <button id="logOutBtn" class="menubtnlogout">Deconectare</button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <h1 class="tabTitle">Toate anunturile disponibile</h1>
+      <div id="filtre">
+        <input type="text" id="filtreOras" placeholder="Introduceti orasul" />
+        <input type="number" id="filtrePretMin" placeholder="Pret minim (€)" />
+        <input type="number" id="filtrePretMax" placeholder="Pret maxim (€)" />
+        <input type="number" id="filtreMetriMin" placeholder="㎡ minim" />
+        <input type="number" id="filtreMetriMax" placeholder="㎡ maxim" />
+        <select id="sortareSelect">
+          <option value="oras">Sortare dupa oras</option>
+          <option value="pret">Sortare dupa pret</option>
+          <option value="metri">Sortare dupa metri patrati</option>
+        </select>
+        <button id="sortBtn">Ascendent</button>
+      </div>
+
+      <div class="altbtn">
+        <a href="../addannounce/addAnnouncement.html"
+          ><button id="addBtn" class="addBtn">
+            <i class="fas fa-plus-circle"></i> Adauga anunt
+          </button></a
+        >
+      </div>
+      <table class="table" id="table">
+        <thead>
+          <tr>
+            <th>Oras</th>
+            <th>Numele strazii</th>
+            <th>Numarul strazii</th>
+            <th>Metrii patrati</th>
+            <th>Aer conditionat</th>
+            <th>Anul constructiei</th>
+            <th>Pret</th>
+            <th>Disponibil incepand cu</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="anuntadaugat" class="anuntadaugat"></tbody>
+      </table>
+    </main>
+    <footer>
+      <p>&copy; 2024 Rental House. Toate drepturile rezervate.</p>
+    </footer>
+  </body>
+</html>

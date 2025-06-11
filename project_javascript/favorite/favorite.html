@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Pagina de favorite</title>
+    <meta name="description" content="RENTAL HOUSE" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./favorite.css" />
+    <link rel="stylesheet" href="../navbar si collapse/navbar.css" />
+    <script type="module" src="../register/util.js" defer></script>
+    <script
+      type="module"
+      src="../navbar si collapse/collapsemenu.js"
+      defer
+    ></script>
+    <script src="./favorite.js" type="module" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="../home/home.html">
+          <img src="./icons8-rent-94.png" alt="Logo"
+        /></a>
+      </div>
+
+      <div>
+        <nav class="nav-container">
+          <a href="../home/home.html">
+            <button type="submit" id="acasa" class="acasa">Acasa</button></a
+          >
+          <a href="../favorite/favorite.html">
+            <button type="submit" id="favorit" class="favorit">
+              Favorite
+            </button></a
+          >
+
+          <div class="profil-container">
+            <button id="profilBtn" class="editprofil">
+              <i class="fas fa-user-edit"></i> Profil
+            </button>
+            <div id="profilMenu" class="profilmenu">
+              <div id="collapseMenu" class="collapseMenu">
+                <p id="currentUserClass" class="currentUserClass"></p>
+              </div>
+              <a href="../myflats/myflats.html">
+                <button id="editprofil" class="menubtnedit">
+                  Anunturile mele
+                </button>
+              </a>
+              <a href="../editprofil/editprofil.html">
+                <button id="editprofil" class="menubtnedit">
+                  Editare profil
+                </button>
+              </a>
+              <button id="logOutBtn" class="menubtnlogout">Deconectare</button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <h1 class="tabTitle">Anunturile mele favorite</h1>
+      <table class="table" id="table">
+        <thead>
+          <tr>
+            <th>Oras</th>
+            <th>Numele strazii</th>
+            <th>Numarul strazii</th>
+            <th>Metrii patrati</th>
+            <th>Aer conditionat</th>
+            <th>Anul constructiei</th>
+            <th>Pret</th>
+            <th>Disponibil incepand cu</th>
+            <th></th>
+          </tr>
+        </thead>
+
+        <tbody id="addTable"></tbody>
+      </table>
+    </main>
+    <footer>
+      <p>&copy; 2024 Rental House. Toate drepturile rezervate.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-grow: 0; */
+  flex-flow: row wrap;
+  height: 80vh;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #333;
+  font-weight: 600;
+}
+
+form {
+  background-color: white;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+}
+#error {
+  color: red;
+  font-weight: bold;
+}
+label {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+input {
+  width: 100%;
+  padding: 9px;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #0066cc;
+  box-shadow: 0 0 5px rgba(0, 102, 204, 0.5);
+}
+
+.addbtn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.addbtn:hover {
+  background-color: #004d99;
+}
+
+.checkbtn {
+  --blue: #0d7eff;
+  --g08: #e1e5eb;
+  --g04: #848ea1;
+  font-size: 14px;
+}
+
+.checkbtn .tgl {
+  display: none;
+}
+
+.checkbtn .tgl + .tgl-btn {
+  outline: 0;
+  display: block;
+  width: 65px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  font-size: 15px;
+  font-weight: 200;
+  color: #fff;
+  background: var(--g08);
+  border-radius: 20rem;
+  transition: all 0.4s ease;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.checkbtn .tgl + .tgl-btn:after {
+  content: "";
+  position: absolute;
+  width: 44%;
+  height: 100%;
+  background: white;
+  border-radius: 50%;
+  transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  left: 0;
+}
+
+.checkbtn .tgl + .tgl-btn:before {
+  content: "Nu";
+  position: absolute;
+  top: 7px;
+  left: 35px;
+  color: var(--g04);
+  transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.checkbtn .tgl:checked + .tgl-btn {
+  background: var(--blue);
+}
+
+.checkbtn .tgl:checked + .tgl-btn:before {
+  content: "Da";
+  left: 10px;
+  color: white;
+}
+
+.checkbtn .tgl:checked + .tgl-btn:after {
+  left: 56.5%;
+}

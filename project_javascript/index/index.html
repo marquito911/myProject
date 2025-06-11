@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>INDEX</title>
+    <meta name="description" content="RENTAL HOUSE" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./index.css" />
+    <script type="module" src="./index.js" defer></script>
+    <script
+    type="module"
+    src="../register/util.js"
+    defer
+  ></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="../index/index.html"> <img src="./icons8-rent-94.png" alt="Logo" /></a>
+      </div>
+      <nav class="nav-container">
+        <div><a href="../login/login.html">Login cont</a></div>
+        <div><a href="../index/index.html">Pagina principala</a></div>
+        <div><a href="../register/register.html">Inregistrare cont</a> </div>
+      </nav>
+    </header>
+<main>
+  <h1 class="tabTitle">Toate anunturile disponibile</h1>
+  <h4  >Pentru a adauga anunt va rugam sa va <a href="../register/register.html">inregistrati</a> sau <a href="../login/login.html">logati</a> in cont</h4>
+  </div>   
+     <table class="table" id="table">
+        <thead>
+          <tr>
+            <th>Oras</th>
+            <th>Numele strazii</th>
+            <th>Numarul strazii</th>
+            <th>Metrii patrati</th>
+            <th>Aer conditionat</th>
+            <th>Anul constructiei</th>
+            <th>Pret</th>
+            <th>Disponibil incepand cu</th>
+          </tr>
+        </thead>
+        <tbody id="anuntadaugat" class="anuntadaugat"></tbody>
+      </table>
+    </main>
+    <footer>
+      <p>&copy; 2024 Rental House. Toate drepturile rezervate.</p>
+    </footer>
+  </body>
+</html>

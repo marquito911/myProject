@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Pagina de Login</title>
+    <meta name="description" content="RENTAL HOUSE" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../login/login.css" />
+    <script type="module" src="../login/login.js" defer></script>
+    <script type="module" src="../register/util.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="../index/index.html">
+          <img src="./icons8-rent-94.png" alt="Logo"
+        /></a>
+      </div>
+      <nav class="nav-container">
+        <div>
+          <a href="../login/login.html">Login cont</a>
+        </div>
+        <div>
+          <a href="../index/index.html">Pagina principala</a>
+        </div>
+        <div>
+          <a href="../register/register.html">Inregistrare cont</a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="logincontainer">
+      <div class="loginbox">
+        <h2>Autentificare</h2>
+        <form class="loginform">
+          <div class="formgroup">
+            <label for="usernameInput">Username</label>
+            <input
+              type="text"
+              id="usernameInput"
+              name="username"
+              required
+              placeholder="Introdu username-ul"
+            />
+          </div>
+
+          <div class="formgroup">
+            <label for="passwordInput">Parola</label>
+            <input
+              type="password"
+              id="passwordInput"
+              name="passwordInput"
+              required
+              placeholder="Introdu parola"
+            />
+          </div>
+          <div class="btns">
+            <button type="submit" id="loginBtn" class="loginBtn">
+              Autentifica-te
+            </button>
+            <a href="../register/register.html"
+              ><button type="button" class="registerBtn">
+                Inregistrare
+              </button></a
+            >
+          </div>
+          <p id="error"></p>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Rental House. Toate drepturile rezervate.</p>
+    </footer>
+  </body>
+</html>
